@@ -208,7 +208,7 @@ export default function Home() {
         </div>
         <div>
           <a 
-            ref="https://github.com/vieiracodes" 
+            href="https://github.com/vieiracodes" 
             target="_blank"
             rel="noopener noreferrer"
 
