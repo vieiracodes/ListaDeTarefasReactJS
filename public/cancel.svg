@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: red;
+        stroke-width: 20px;
+      }
+
+      .cls-2 {
+        fill: red;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle id="Elipse_1" data-name="Elipse 1" class="cls-1" cx="160.5" cy="160.5" r="140.344"/>
+  <path id="Retângulo_1_copiar" data-name="Retângulo 1 copiar" class="cls-2" d="M204.341,107.467l8.485,8.485-96.874,96.874-8.485-8.485Zm-88.389.707,96.874,96.874-8.485,8.485-96.874-96.874Z"/>
+  <path id="Retângulo_4_copiar" data-name="Retângulo 4 copiar" class="cls-2" d="M201.7,104.159L215.841,118.3,118.3,214.841,104.159,200.7Z"/>
+  <path id="Retângulo_4_copiar_2" data-name="Retângulo 4 copiar 2" class="cls-2" d="M215,201.815L200.815,216,104,118.185,118.185,104Z"/>
+</svg>

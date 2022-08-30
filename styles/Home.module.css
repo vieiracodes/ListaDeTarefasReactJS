@@ -1,0 +1,224 @@
+.container {
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  transition: all 0.5s;
+}
+
+.main {
+  padding: 1.5rem 0;
+  flex: 1;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.inputContainer{
+  display: flex;
+  height: 30px;
+  min-width: 260px;
+  justify-content: center;
+  margin: 20px;
+  border: 1px solid #b1b1b1;
+  border-radius: 20px;
+  user-select: none;
+  transition: all 0.5s;
+}
+
+.inputContainer input{
+  font-size: 18px;
+  outline: none;
+  border-radius: 20px 0px 0px 20px;
+  border: none;
+  padding: 0px 20px;
+  width: 30vw;
+  min-width: 170px;
+  height: 100%;
+  transition: all 5s;
+}
+
+.inputContainer button{
+  background-color: #3090ff;
+  cursor: pointer;
+  color: white;
+  border: none;
+  height: 100%;
+  border-radius: 0px 20px 20px 0px;
+  padding: 0px 10px;
+  transition: all 0.5s;
+
+}
+
+.inputContainer button:hover{
+  background-color: #0070f3;
+
+  transition: all 0.5s;
+}
+
+#MessageShow{
+  display: none;
+  transition: all 0.5s;
+}
+
+.error{
+  display: block;
+  margin-bottom: 12px;
+  padding: 10px;
+  text-align: justify;
+  color: red;
+  background-color: white;
+  border: 0.5px solid rgb(255, 56, 56);
+  border-radius: 10px;
+  max-width: 300px;
+  min-height: fit-content;
+  transition: all 0.5s ease-out;
+}
+
+
+.error::before{
+  content: 'ERRO:';
+  font-size: 17px;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+
+.listaTarefas{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 45vh;
+  width: 60vw;
+  min-height: fit-content;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.listaTarefas::-webkit-scrollbar{
+  width: 5px;
+  border-radius: 5px;
+}
+
+.listaTarefas::-webkit-scrollbar-thumb{
+  background-color: #999999;
+  border-radius: 5px;
+}
+
+.containerTarefa{
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  flex-shrink: 0;
+  width: 60vw;
+  transform: translateY(0px);
+  overflow: hidden;
+  transition: 0.5s all;
+}
+
+.tarefa{
+  display: flex;
+  opacity: 1;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50vw;
+  height: 100%;
+  max-width: 420px;
+  min-width: fit-content;
+  font-size: 22px;
+  font-weight: 600;
+  border: 1px solid #b1b1b1;
+  filter: brightness(1);
+  border-radius: 25vw;
+  overflow: hidden;
+  transition: 0.5s all;
+  z-index: 0;
+}
+
+.btnsTarefa{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 0;
+  width: 0;
+  transition: 0.5s all;
+}
+
+.actionBtn{
+  opacity: 1;
+  margin: 0 5px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 22px;
+  transition: 0.5s;
+  height: 100%;
+  transition: 0.4s;
+}
+
+.containerTarefa:hover .btnsTarefa{
+  width: 6vh;
+  height: 13vh;
+  margin-left: 10px;
+  transition: 0.4s;
+}
+
+.tarefa h2{
+  margin: 0px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  max-height: 18vh;
+  min-height: 90px;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  border-top: 1px solid #dbdbdb;
+}
+
+.footer a {
+  display: flex;
+  height: 46px;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 3rem;
+  transition: all 5s;
+}
+
+.containerLogo{
+  display: flex;
+  width: 160px;
+  justify-content: space-between;
+  transition: all 5s;
+}
+
+@media (max-width:768px) {
+  .listaTarefas{
+    width: 95%;
+  }
+  .containerTarefa{
+    width: 100%;
+  }
+  .tarefa{
+    max-width: none;
+    width: 100%;
+  }
+  .inputContainer input{
+    width: 70vw;
+  }
+  .inputContainer{
+    height: 45px;
+  }
+}
