@@ -207,7 +207,12 @@ export default function Home() {
           </a>
         </div>
         <div>
-          <a href="https://github.com/vieiracodes" target={"_blank"}>
+          <a 
+            ref="https://github.com/vieiracodes" 
+            target="_blank"
+            rel="noopener noreferrer"
+
+          >
             Create by
             <Image
               src="/logo-vieiracodes.svg"

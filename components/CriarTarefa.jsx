@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
 export default function CriarTarefa(props) {
@@ -38,7 +39,7 @@ export default function CriarTarefa(props) {
         </div>
 
         <div className={styles.btnsTarefa} alt={info.taskDeleteKey}>
-          <img
+          <Image
             src="/confirm.svg"
             alt={info.taskDeleteKey}
             className={styles.actionBtn}
