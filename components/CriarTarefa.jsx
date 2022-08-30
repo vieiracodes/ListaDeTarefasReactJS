@@ -40,6 +40,8 @@ export default function CriarTarefa(props) {
 
         <div className={styles.btnsTarefa} alt={info.taskDeleteKey}>
           <Image
+            width={50}
+            height={50}
             src="/confirm.svg"
             alt={info.taskDeleteKey}
             className={styles.actionBtn}
